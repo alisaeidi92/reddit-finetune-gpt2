@@ -65,3 +65,17 @@ b) The project served as an educational experience, introducing various new APIs
 c) Practical experience in using new metrics, such as ROUGE, for evaluating the performance of the model on the text summarization task.
 
 d) The opportunity to discover the similarities and differences between deep learning techniques used in computer vision and those employed in natural language processing, particularly in terms of familiar functions and optimizers. This helped to better understand the versatility of deep learning techniques across different domains.
+
+## 7. Techniques used to overcome memory errors:
+
+   CUDA (Out of Memory) OOM runtime error. Used various methods to overcome the OOM errors:
+   
+   i) Decreasing batch size and Enabling 'auto_find_batch_size' (lead to 0 batch size during the run)
+   
+   ii) Randomly sampling the dataset and reducing the memory usage
+   
+   iii) Enabled gradient checkpointing which saves a lot of memory during training
+   
+   iv) Using no_grad context-manager to detach gradients for evaluation and saving memory
+   
+   v) Improving system performance by increasing the number of cores and RAM size

@@ -3,6 +3,7 @@
 This project aims to complete the Chain of Hindsight Challenge, which involves fine-tuning a small GPT-2 model with 124 million parameters on a text summarization task using the HuggingFace Reddit dataset. The goal is to leverage the method proposed in the Chain of Hindsight (CoH) paper to improve the model's performance and measure its ROUGE score. The challenge allows the use of any environment and resources, including cloud services (GCP, AWS) or local machines (Bare Metal or Docker).
 
 ## 2. Research and Study
+
 During the research phase, an in-depth study of the GPT-2 model, the HuggingFace Reddit dataset, and the Chain of Hindsight (CoH) paper was conducted.
 
 GPT-2 model: The GPT-2 model is a powerful and highly versatile language model developed by OpenAI. It's designed for a variety of natural language processing tasks, including text summarization.
@@ -16,7 +17,7 @@ A baseline GPT-2 model was fine-tuned on the HuggingFace Reddit dataset for the 
 1. **Data preprocessing**:
    - Loaded the HuggingFace Reddit dataset and split it into training and validation sets.
    - Tokenized the dataset using the GPT-2 tokenizer, ensuring that input sequences were within the model's maximum sequence length.
-   - Created a custom dataset class to handle the tokenized data, including padding and other necessary adjustments.
+   - Created a custom dataset processing function to handle the tokenized data, including padding, truncation, concatenating content and summary and " TD;LR " for GPT2 text summarization task.
 
 2. **Model fine-tuning**:
    - Initialized a GPT-2 model with the HuggingFace Transformers library.
@@ -33,7 +34,7 @@ The baseline GPT-2 model was modified to leverage the CoH methods to improve its
 
 1. **Implementing the CoH algorithm**:
    - Studied the CoH paper and understood the iterative process it proposed for fine-tuning language models.
-   - Implemented the CoH method, including the necessary functions and classes for handling model training and evaluation.
+   - Implemented the CoH method, including the necessary functions for handling model training and evaluation.
 
 2. **Fine-tuning the GPT-2 model with CoH**:
    - Integrated the CoH method into the training process of the GPT-2 model.

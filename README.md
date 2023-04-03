@@ -71,7 +71,11 @@ d) The opportunity to discover the similarities and differences between deep lea
    CUDA (Out of Memory) OOM runtime error. Used various methods to overcome the OOM errors:
    
    i) Decreasing batch size and Enabling 'auto_find_batch_size' (lead to 0 batch size during the run)
+   
    ii) Randomly sampling the dataset and reducing the memory usage
+   
    iii) Enabled gradient checkpointing which saves a lot of memory during training
+   
    iv) Using no_grad context-manager to detach gradients for evaluation and saving memory
+   
    v) Improving system performance by increasing the number of cores and RAM size

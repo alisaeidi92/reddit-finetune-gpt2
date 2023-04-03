@@ -58,8 +58,10 @@ c) The CoH GitHub project received a major update during the project, causing un
 
 Despite the challenges, the project provided valuable learning experiences and insights:
 
-a) The project served as an educational experience, introducing various new APIs and helpful functions for processing text data and fine-tuning language models.
+a) Understanding the flow of a language model using a relatively new algorithm such as GPT.
 
-b) Practical experience in using new metrics, such as ROUGE, for evaluating the performance of the model on the text summarization task.
+b) The project served as an educational experience, introducing various new APIs and helpful functions for processing text data and fine-tuning language models.
 
-c) The opportunity to discover the similarities and differences between deep learning techniques used in computer vision and those employed in natural language processing, particularly in terms of familiar functions and optimizers. This helped to better understand the versatility of deep learning techniques across different domains.
+c) Practical experience in using new metrics, such as ROUGE, for evaluating the performance of the model on the text summarization task.
+
+d) The opportunity to discover the similarities and differences between deep learning techniques used in computer vision and those employed in natural language processing, particularly in terms of familiar functions and optimizers. This helped to better understand the versatility of deep learning techniques across different domains.
